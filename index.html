@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Budget Tracker</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Budget Tracker</h1>
+      <div id="income-section">
+        <h2>Income</h2>
+        <form id="income-form">
+          <input
+            type="text"
+            id="income-description"
+            placeholder="Description"
+          />
+          <input type="number" id="income-amount" placeholder="Amount" />
+          <button id="incomeSubmit">Add Income</button>
+        </form>
+      </div>
+
+      <div id="expense-section">
+        <h2>Expenses</h2>
+        <form id="expense-form">
+          <input
+            type="text"
+            id="expense-description"
+            placeholder="Description"
+          />
+          <input type="number" id="expense-amount" placeholder="Amount" />
+          <button id="expenseSubmit">Add Expense</button>
+        </form>
+      </div>
+
+      <div id="budget-summary">
+        <h2>Budget Summary</h2>
+        <p>Remaining Budget: <span id="budget-remaining">0</span></p>
+      </div>
+    </div>
+
+    <div class="containerTwo">
+      <section>
+        <h3 class="list-title">Income</h3>
+
+        <div id="total-income">
+          <p>Total Income: <span id="income-total">0</span></p>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="list-title">Expense</h3>
+
+        <div id="total-expense">
+          <p>Total Expenses: <span id="expense-total">0</span></p>
+        </div>
+      </section>
+      <section>
+        <div id="income-list">
+          <!-- Income records will be dynamically added here -->
+        </div>
+        <div id="expense-list">
+          <!-- Expense records will be dynamically added here -->
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
